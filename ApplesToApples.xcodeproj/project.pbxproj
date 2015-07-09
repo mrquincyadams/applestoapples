@@ -17,7 +17,7 @@
 		3F3030D11B4C91D800B462ED /* PlayerContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3030D01B4C91D800B462ED /* PlayerContentViewController.m */; };
 		3F30314C1B4ED08D00B462ED /* greenCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F30314B1B4ED08D00B462ED /* greenCard.png */; };
 		3F30314E1B4ED09400B462ED /* redCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F30314D1B4ED09400B462ED /* redCard.png */; };
-		3FDA32131B4EE1FC00E970A2 /* PlayerContentViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA32121B4EE1FC00E970A2 /* PlayerContentViewController2.m */; };
+		3FDA32191B4F1A9C00E970A2 /* PlayerContentViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA32181B4F1A9C00E970A2 /* PlayerContentViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,8 @@
 		3F3030D01B4C91D800B462ED /* PlayerContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerContentViewController.m; sourceTree = "<group>"; };
 		3F30314B1B4ED08D00B462ED /* greenCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenCard.png; sourceTree = "<group>"; };
 		3F30314D1B4ED09400B462ED /* redCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCard.png; sourceTree = "<group>"; };
-		3FDA32111B4EE1FC00E970A2 /* PlayerContentViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerContentViewController2.h; sourceTree = "<group>"; };
-		3FDA32121B4EE1FC00E970A2 /* PlayerContentViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerContentViewController2.m; sourceTree = "<group>"; };
+		3FDA32171B4F1A9C00E970A2 /* PlayerContentViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerContentViewController2.h; sourceTree = "<group>"; };
+		3FDA32181B4F1A9C00E970A2 /* PlayerContentViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerContentViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +98,13 @@
 				3F3030B01B4C8C0F00B462ED /* ViewController.h */,
 				3F3030B11B4C8C0F00B462ED /* ViewController.m */,
 				3F3030B31B4C8C0F00B462ED /* Main.storyboard */,
-				3FDA32111B4EE1FC00E970A2 /* PlayerContentViewController2.h */,
-				3FDA32121B4EE1FC00E970A2 /* PlayerContentViewController2.m */,
 				3F3030CF1B4C91D800B462ED /* PlayerContentViewController.h */,
 				3F3030D01B4C91D800B462ED /* PlayerContentViewController.m */,
 				3F3030B61B4C8C0F00B462ED /* Images.xcassets */,
 				3F3030B81B4C8C0F00B462ED /* LaunchScreen.xib */,
 				3F3030A91B4C8C0F00B462ED /* Supporting Files */,
+				3FDA32171B4F1A9C00E970A2 /* PlayerContentViewController2.h */,
+				3FDA32181B4F1A9C00E970A2 /* PlayerContentViewController2.m */,
 			);
 			path = ApplesToApples;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 				3F3030B21B4C8C0F00B462ED /* ViewController.m in Sources */,
 				3F3030AF1B4C8C0F00B462ED /* AppDelegate.m in Sources */,
 				3F3030AC1B4C8C0F00B462ED /* main.m in Sources */,
-				3FDA32131B4EE1FC00E970A2 /* PlayerContentViewController2.m in Sources */,
+				3FDA32191B4F1A9C00E970A2 /* PlayerContentViewController2.m in Sources */,
 				3F3030D11B4C91D800B462ED /* PlayerContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
