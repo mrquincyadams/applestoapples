@@ -14,6 +14,9 @@
 		3F3030B71B4C8C0F00B462ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3030B61B4C8C0F00B462ED /* Images.xcassets */; };
 		3F3030BA1B4C8C0F00B462ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3030B81B4C8C0F00B462ED /* LaunchScreen.xib */; };
 		3F3030C61B4C8C0F00B462ED /* ApplesToApplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3030C51B4C8C0F00B462ED /* ApplesToApplesTests.m */; };
+		3F3030D11B4C91D800B462ED /* PlayerContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3030D01B4C91D800B462ED /* PlayerContentViewController.m */; };
+		3F30314C1B4ED08D00B462ED /* greenCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F30314B1B4ED08D00B462ED /* greenCard.png */; };
+		3F30314E1B4ED09400B462ED /* redCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F30314D1B4ED09400B462ED /* redCard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		3F3030BF1B4C8C0F00B462ED /* ApplesToApplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplesToApplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3030C41B4C8C0F00B462ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3030C51B4C8C0F00B462ED /* ApplesToApplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplesToApplesTests.m; sourceTree = "<group>"; };
+		3F3030CF1B4C91D800B462ED /* PlayerContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerContentViewController.h; sourceTree = "<group>"; };
+		3F3030D01B4C91D800B462ED /* PlayerContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerContentViewController.m; sourceTree = "<group>"; };
+		3F30314B1B4ED08D00B462ED /* greenCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenCard.png; sourceTree = "<group>"; };
+		3F30314D1B4ED09400B462ED /* redCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +88,15 @@
 		3F3030A81B4C8C0F00B462ED /* ApplesToApples */ = {
 			isa = PBXGroup;
 			children = (
+				3F30314D1B4ED09400B462ED /* redCard.png */,
+				3F30314B1B4ED08D00B462ED /* greenCard.png */,
 				3F3030AD1B4C8C0F00B462ED /* AppDelegate.h */,
 				3F3030AE1B4C8C0F00B462ED /* AppDelegate.m */,
 				3F3030B01B4C8C0F00B462ED /* ViewController.h */,
 				3F3030B11B4C8C0F00B462ED /* ViewController.m */,
 				3F3030B31B4C8C0F00B462ED /* Main.storyboard */,
+				3F3030CF1B4C91D800B462ED /* PlayerContentViewController.h */,
+				3F3030D01B4C91D800B462ED /* PlayerContentViewController.m */,
 				3F3030B61B4C8C0F00B462ED /* Images.xcassets */,
 				3F3030B81B4C8C0F00B462ED /* LaunchScreen.xib */,
 				3F3030A91B4C8C0F00B462ED /* Supporting Files */,
@@ -201,7 +212,9 @@
 			files = (
 				3F3030B51B4C8C0F00B462ED /* Main.storyboard in Resources */,
 				3F3030BA1B4C8C0F00B462ED /* LaunchScreen.xib in Resources */,
+				3F30314E1B4ED09400B462ED /* redCard.png in Resources */,
 				3F3030B71B4C8C0F00B462ED /* Images.xcassets in Resources */,
+				3F30314C1B4ED08D00B462ED /* greenCard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +235,7 @@
 				3F3030B21B4C8C0F00B462ED /* ViewController.m in Sources */,
 				3F3030AF1B4C8C0F00B462ED /* AppDelegate.m in Sources */,
 				3F3030AC1B4C8C0F00B462ED /* main.m in Sources */,
+				3F3030D11B4C91D800B462ED /* PlayerContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +426,7 @@
 				3F3030CB1B4C8C0F00B462ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F3030CC1B4C8C0F00B462ED /* Build configuration list for PBXNativeTarget "ApplesToApplesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				3F3030CE1B4C8C0F00B462ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
