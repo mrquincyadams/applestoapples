@@ -29,4 +29,6 @@
 
 - (IBAction)nextButton:(id)sender {
 }
+- (IBAction)nextButton2:(id)sender {
+}
 @end

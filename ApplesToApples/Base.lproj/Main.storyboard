@@ -33,12 +33,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihv-gB-V9Y">
-                                <rect key="frame" x="82" y="326" width="84" height="30"/>
-                                <state key="normal" title="Green cards">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDk-oJ-sod">
                                 <rect key="frame" x="221" y="326" width="70" height="30"/>
                                 <state key="normal" title="Red cards">
@@ -46,6 +40,15 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X8m-wi-8Zv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihv-gB-V9Y">
+                                <rect key="frame" x="82" y="326" width="84" height="30"/>
+                                <state key="normal" title="Green cards">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xWr-cx-bvh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,6 +68,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7un-c0-5FP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="635.5" y="-108.5"/>
+        </scene>
+        <!--Player Content View Controller 2-->
+        <scene sceneID="HkY-1s-8oY">
+            <objects>
+                <viewController title="Player Content View Controller 2" id="RgO-4L-8Bu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mDw-Oy-fBR"/>
+                        <viewControllerLayoutGuide type="bottom" id="PZW-vr-4OB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yi5-Ul-Edy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCj-OH-8XM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.5" y="972.5"/>
         </scene>
         <!--Player Content View Controller-->
         <scene sceneID="oca-UL-1M2">

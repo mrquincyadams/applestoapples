@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSArray *cardTitles;
 @property (strong, nonatomic) NSArray *cardNames;
 @property (strong, nonatomic) NSArray *cardImages;
+- (IBAction)nextButton2:(id)sender;
 
 
 @end
