@@ -273,7 +273,7 @@
                    @"Woebegone" : @"dismal, sorrowful, bummed out",
                    @"Worldly" : @"experienced, sophisticated, materialistic",
                    @"Zany" : @"crazy, funny, wacky"
-                   
+                
                    };
     
     NSArray *temp  = [inventory allKeys];
