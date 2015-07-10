@@ -765,11 +765,11 @@
                           @"Zucchini":@"A squashed vegetable.",
                           };
     
-    self.label1.text = [self.cardTitles objectAtIndex:0];
-    self.label2.text = [self.cardTitles objectAtIndex:1];
-    self.label3.text = [self.cardTitles objectAtIndex:2];
-    self.label4.text = [self.cardTitles objectAtIndex:3];
-    self.label5.text = [self.cardTitles objectAtIndex:4];
+    [self.label1 setTitle:[self.cardTitles objectAtIndex:0] forState:UIControlStateNormal];
+    [self.label2 setTitle:[self.cardTitles objectAtIndex:1] forState:UIControlStateNormal];
+    [self.label3 setTitle:[self.cardTitles objectAtIndex:2] forState:UIControlStateNormal];
+    [self.label4 setTitle:[self.cardTitles objectAtIndex:3] forState:UIControlStateNormal];
+    [self.label5 setTitle:[self.cardTitles objectAtIndex:4] forState:UIControlStateNormal];
     self.text1.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:0]];
     self.text2.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:1]];
     self.text3.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:3]];
@@ -851,4 +851,7 @@
     return 0;
 }
 
+- (IBAction)button1Pressed:(UIButton *)sender {
+    sender.backgroundColor = [UIColor blackColor];
+}
 @end
