@@ -11,6 +11,10 @@
 
 @interface ViewController : UIViewController <UIPageViewControllerDataSource>
 - (IBAction)nextButton:(id)sender;
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *cardTitles;
+@property (strong, nonatomic) NSArray *cardNames;
+@property (strong, nonatomic) NSArray *cardImages;
 - (IBAction)nextButton2:(id)sender;
 
 
