@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface redRootController : UIViewController <UIPageViewControllerDataSource>
-- (IBAction)selectCard:(id)sender;
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (strong, nonatomic) NSArray *cardTitles;
 @property (strong, nonatomic) NSArray *cardNames;

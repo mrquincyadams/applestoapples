@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *cardBackground;
 @property NSUInteger pageIndex;
 @property NSString *cardText;
+@property NSString *cardSummary;
 @property NSString *imageFile;
 
 @end
