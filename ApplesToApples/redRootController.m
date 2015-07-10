@@ -765,11 +765,16 @@
                           @"Zucchini":@"A squashed vegetable.",
                           };
     
-    self.label1.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:0], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:0]]];
-    self.label2.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:1], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:1]]];
-    self.label3.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:2], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:2]]];
-    self.label4.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:3], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:3]]];
-    self.label5.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:4], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:4]]];
+    self.label1.text = [self.cardTitles objectAtIndex:0];
+    self.label2.text = [self.cardTitles objectAtIndex:1];
+    self.label3.text = [self.cardTitles objectAtIndex:2];
+    self.label4.text = [self.cardTitles objectAtIndex:3];
+    self.label5.text = [self.cardTitles objectAtIndex:4];
+    self.text1.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:0]];
+    self.text2.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:1]];
+    self.text3.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:3]];
+    self.text4.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:2]];
+    self.text5.text = [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:4]];
     
     /*
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];

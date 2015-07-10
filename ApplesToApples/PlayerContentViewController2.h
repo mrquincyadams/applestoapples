@@ -11,6 +11,6 @@
 @interface PlayerContentViewController2 : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *greenTitle;
 @property (weak, nonatomic) IBOutlet UILabel *greenSummary;
-
+@property (strong, nonatomic) NSArray *greenCardsText;
 
 @end

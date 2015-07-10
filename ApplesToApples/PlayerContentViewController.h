@@ -9,12 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PlayerContentViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *cardMessage;
-@property (weak, nonatomic) IBOutlet UIImageView *cardBackground;
 @property NSUInteger pageIndex;
 @property NSString *cardText;
 @property NSString *cardSummary;
 @property NSString *imageFile;
-@property (weak, nonatomic) IBOutlet UILabel *redTitle;
 
 @end

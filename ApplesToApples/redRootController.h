@@ -18,5 +18,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *label3;
 @property (weak, nonatomic) IBOutlet UILabel *label4;
 @property (weak, nonatomic) IBOutlet UILabel *label5;
+@property (weak, nonatomic) IBOutlet UITextView *text1;
+@property (weak, nonatomic) IBOutlet UITextView *text2;
+@property (weak, nonatomic) IBOutlet UITextView *text3;
+@property (weak, nonatomic) IBOutlet UITextView *text4;
+@property (weak, nonatomic) IBOutlet UITextView *text5;
 
 @end

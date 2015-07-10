@@ -16,11 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.cardBackground.image = [UIImage imageNamed:self.imageFile];
-    self.cardMessage.text = self.cardText;
-    self.redTitle.text = self.cardSummary;
-    [self.redTitle setTransform:CGAffineTransformMakeRotation(-M_PI / 2)];
     // Do any additional setup after loading the view.
 }
 
