@@ -778,6 +778,7 @@
 - (IBAction)nextButton:(id)sender {
 }
 - (IBAction)nextButton2:(id)sender {
+    
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
@@ -786,6 +787,31 @@
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     return self;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"red"])
+    {
+        NSArray *keys = [allRedCardsTitles allKeys];
+        NSMutableArray *redCards = [[NSMutableArray alloc] init];
+        
+        for(int i = 0; i < 5; i++)
+        {
+            NSString *randomKey = keys[arc4random_uniform([keys count])];
+            NSString *randomValue = allRedCardsTitles[randomKey];
+            
+            NSDictionary *redCard = @{randomKey:randomValue};
+            
+            [redCards addObject: redCard];
+        }
+        
+        
+        
+        
+//        RedPageViewController *dest = segue.destinationViewController;
+//        dest
+    }
 }
 
 @end

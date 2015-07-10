@@ -769,9 +769,6 @@
     id randomKey = keys[arc4random_uniform([keys count])];
     id randomValue = allRedCardsTitles[randomKey];
     
-    _cardTitles = @[randomKey, randomKey, randomKey, randomKey, randomKey];
-    _cardNames = @[randomValue, randomValue, randomValue, randomValue, randomValue];
-    
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     
