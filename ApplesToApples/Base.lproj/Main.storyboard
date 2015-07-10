@@ -40,7 +40,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X8m-wi-8Zv"/>
-                                    <segue destination="KPF-xv-D8a" kind="push" identifier="redSegue" id="0AA-O6-gzT"/>
+                                    <segue destination="ar4-tf-0Rq" kind="show" id="MxL-Z4-wls"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihv-gB-V9Y">
@@ -61,7 +61,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940.5" y="-108.5"/>
+            <point key="canvasLocation" x="672.5" y="-108.5"/>
+        </scene>
+        <!--RootViewController-->
+        <scene sceneID="xT4-5D-hLD">
+            <objects>
+                <viewController title="RootViewController" id="ar4-tf-0Rq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I2V-1x-6my"/>
+                        <viewControllerLayoutGuide type="bottom" id="0cC-rG-Yl0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9gX-kA-qUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eV5-RB-XJm"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIh-E7-jP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339.5" y="-108.5"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="i4g-El-SVB">
@@ -71,12 +91,12 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7un-c0-5FP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447.5" y="-108.5"/>
+            <point key="canvasLocation" x="1650.5" y="-108.5"/>
         </scene>
         <!--Player Content View Controller 2-->
         <scene sceneID="HkY-1s-8oY">
             <objects>
-                <viewController title="Player Content View Controller 2" id="RgO-4L-8Bu" sceneMemberID="viewController">
+                <viewController title="Player Content View Controller 2" id="RgO-4L-8Bu" customClass="PlayerContentViewController2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mDw-Oy-fBR"/>
                         <viewControllerLayoutGuide type="bottom" id="PZW-vr-4OB"/>
@@ -84,14 +104,35 @@
                     <view key="view" contentMode="scaleToFill" id="yi5-Ul-Edy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1O-LY-g9v">
+                                <rect key="frame" x="8" y="127" width="46" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAh-gH-bpB">
+                                <rect key="frame" x="12" y="472" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenCard.png" translatesAutoresizingMaskIntoConstraints="NO" id="o8q-hk-bll">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vrZ-aD-jAa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="greenSummary" destination="aAh-gH-bpB" id="Mki-up-9jz"/>
+                        <outlet property="greenTitle" destination="g1O-LY-g9v" id="hYs-0D-pnR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCj-OH-8XM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.5" y="698.5"/>
+            <point key="canvasLocation" x="193.5" y="353.5"/>
         </scene>
         <!--Player Content View Controller-->
         <scene sceneID="oca-UL-1M2">
@@ -105,21 +146,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEh-FR-0ml">
-                                <rect key="frame" x="0.0" y="34" width="375" height="444"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vd-k2-iK8">
-                                <rect key="frame" x="16" y="20" width="42" height="375"/>
+                                <rect key="frame" x="16" y="339" width="42" height="375"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-md-T7d">
-                                <rect key="frame" x="16" y="550" width="343" height="37"/>
+                                <rect key="frame" x="-134" y="573" width="343" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEh-FR-0ml">
+                                <rect key="frame" x="0.0" y="34" width="375" height="633"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -132,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLs-FF-qLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178.5" y="698.5"/>
+            <point key="canvasLocation" x="925.5" y="699.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6m2-rf-CPJ">
@@ -151,7 +192,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szC-7o-Ugv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365.5" y="-108.5"/>
+            <point key="canvasLocation" x="112.5" y="-674.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="greenCard.png" width="640" height="1138"/>
+    </resources>
 </document>

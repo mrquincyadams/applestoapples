@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PlayerContentViewController2 : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *greenCardTitle;
-@property (weak, nonatomic) IBOutlet UILabel *greenCardSummary;
+@property (weak, nonatomic) IBOutlet UILabel *greenTitle;
+@property (weak, nonatomic) IBOutlet UILabel *greenSummary;
+
 
 @end
