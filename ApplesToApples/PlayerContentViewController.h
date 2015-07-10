@@ -15,5 +15,6 @@
 @property NSString *cardText;
 @property NSString *cardSummary;
 @property NSString *imageFile;
+@property (weak, nonatomic) IBOutlet UILabel *redTitle;
 
 @end

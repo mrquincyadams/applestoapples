@@ -175,6 +175,7 @@
                     <connections>
                         <outlet property="cardBackground" destination="DEh-FR-0ml" id="UJR-1u-PK9"/>
                         <outlet property="cardMessage" destination="3tw-md-T7d" id="ZUR-DE-yq4"/>
+                        <outlet property="redTitle" destination="6Vd-k2-iK8" id="Esr-P7-IMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLs-FF-qLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
