@@ -7,6 +7,7 @@
 //
 
 #import "redRootController.h"
+#import "PlayerContentViewController.h"
 
 @implementation redRootController
 {
@@ -763,6 +764,19 @@
                           @"Zen":@"Japanese form of Buddhism, originated in China. Zen again, maybe not.",
                           @"Zucchini":@"A squashed vegetable.",
                           };
+    
+    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
+    self.pageViewController.dataSource = self;
+    
+    PlayerContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    
+    [self addChildViewController:_pageViewController];
+    [self.view addSubview:_pageViewController.view];
+    [self.pageViewController didMoveToParentViewController:self];
     // Do any additional setup after loading the view.
 }
 
@@ -780,6 +794,56 @@
     NSLog(randomKey, randomValue);
 }
 
-- (IBAction)selectCard:(id)sender {
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((PlayerContentViewController*) viewController).pageIndex;
+    
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
+    }
+    
+    index--;
+    return [self viewControllerAtIndex:index];
 }
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSUInteger index = ((PlayerContentViewController*) viewController).pageIndex;
+    
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    index++;
+    if (index == [self.cardTitles count]) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index];
+}
+
+- (PlayerContentViewController *)viewControllerAtIndex:(NSUInteger)index
+{
+    if (([self.cardTitles count] == 0) || (index >= [self.cardTitles count])) {
+        return nil;
+    }
+    
+    // Create a new view controller and pass suitable data.
+    PlayerContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
+    pageContentViewController.imageFile = self.cardImages[index];
+    pageContentViewController.cardText = self.cardTitles[index];
+    pageContentViewController.pageIndex = index;
+    
+    return pageContentViewController;
+}
+
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
+{
+    return [self.cardTitles count];
+}
+
+- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
+{
+    return 0;
+}
+
 @end
