@@ -39,9 +39,6 @@
                                     <segue destination="RgO-4L-8Bu" kind="push" identifier="greenSegue" id="bvd-i9-fpE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-hD-d2Q">
-                                <rect key="frame" x="0.0" y="64" width="375" height="289"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDk-oJ-sod">
                                 <rect key="frame" x="269" y="437" width="70" height="30"/>
                                 <state key="normal" title="Red cards">
@@ -53,11 +50,14 @@
                                     <segue destination="ar4-tf-0Rq" kind="show" id="MxL-Z4-wls"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-Fk-htt">
-                                <rect key="frame" x="218" y="486" width="141" height="161"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bVr-KJ-V8d">
+                                <rect key="frame" x="-4" y="64" width="383" height="291"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-E3-8aA">
-                                <rect key="frame" x="16" y="486" width="145" height="161"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="60O-To-Na3">
+                                <rect key="frame" x="214" y="484" width="145" height="152"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oit-qV-7MV">
+                                <rect key="frame" x="16" y="484" width="146" height="152"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="7.621079918e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="672.5" y="-108.5"/>
         </scene>
-        <!--RootViewController-->
+        <!--redRootController-->
         <scene sceneID="xT4-5D-hLD">
             <objects>
-                <viewController title="RootViewController" id="ar4-tf-0Rq" sceneMemberID="viewController">
+                <viewController title="redRootController" id="ar4-tf-0Rq" customClass="redRootController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I2V-1x-6my"/>
                         <viewControllerLayoutGuide type="bottom" id="0cC-rG-Yl0"/>
@@ -97,7 +97,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7un-c0-5FP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.5" y="-108.5"/>
+            <point key="canvasLocation" x="1327.5" y="-278.5"/>
         </scene>
         <!--Player Content View Controller 2-->
         <scene sceneID="HkY-1s-8oY">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLs-FF-qLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925.5" y="699.5"/>
+            <point key="canvasLocation" x="672.5" y="714.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6m2-rf-CPJ">
