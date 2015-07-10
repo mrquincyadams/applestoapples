@@ -779,4 +779,13 @@
 }
 - (IBAction)nextButton2:(id)sender {
 }
+
+-(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
+    return self;
+}
+
+-(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
+    return self;
+}
+
 @end
