@@ -826,7 +826,7 @@
     }
     
     // Create a new view controller and pass suitable data.
-    PlayerContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
+    PlayerContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PlayerContentViewController"];
     pageContentViewController.imageFile = self.cardImages[index];
     pageContentViewController.cardText = self.cardTitles[index];
     pageContentViewController.pageIndex = index;
