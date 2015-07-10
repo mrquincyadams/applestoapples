@@ -830,6 +830,7 @@
     pageContentViewController.imageFile = self.cardImages[index];
     pageContentViewController.cardText = self.cardTitles[index];
     pageContentViewController.pageIndex = index;
+    // This is a test
     
     return pageContentViewController;
 }
