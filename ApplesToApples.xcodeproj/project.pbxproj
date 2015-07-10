@@ -18,6 +18,9 @@
 		3F30314C1B4ED08D00B462ED /* greenCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F30314B1B4ED08D00B462ED /* greenCard.png */; };
 		3F30314E1B4ED09400B462ED /* redCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F30314D1B4ED09400B462ED /* redCard.png */; };
 		3FDA32191B4F1A9C00E970A2 /* PlayerContentViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA32181B4F1A9C00E970A2 /* PlayerContentViewController2.m */; };
+		3FDA321B1B50282700E970A2 /* apple.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA321A1B50282700E970A2 /* apple.jpeg */; };
+		3FDA321D1B5028B700E970A2 /* apple2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA321C1B5028B700E970A2 /* apple2.jpeg */; };
+		3FDA321F1B50293B00E970A2 /* apple3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA321E1B50293B00E970A2 /* apple3.jpeg */; };
 		E57DA4571B4F886B003F8A45 /* redRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = E57DA4561B4F886B003F8A45 /* redRootController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		3F30314D1B4ED09400B462ED /* redCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCard.png; sourceTree = "<group>"; };
 		3FDA32171B4F1A9C00E970A2 /* PlayerContentViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerContentViewController2.h; sourceTree = "<group>"; };
 		3FDA32181B4F1A9C00E970A2 /* PlayerContentViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerContentViewController2.m; sourceTree = "<group>"; };
+		3FDA321A1B50282700E970A2 /* apple.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = apple.jpeg; path = ../../../Downloads/apple.jpeg; sourceTree = "<group>"; };
+		3FDA321C1B5028B700E970A2 /* apple2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = apple2.jpeg; path = ../../../Downloads/apple2.jpeg; sourceTree = "<group>"; };
+		3FDA321E1B50293B00E970A2 /* apple3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = apple3.jpeg; path = ../../../Downloads/apple3.jpeg; sourceTree = "<group>"; };
 		E57DA4551B4F886B003F8A45 /* redRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redRootController.h; sourceTree = "<group>"; };
 		E57DA4561B4F886B003F8A45 /* redRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = redRootController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +100,9 @@
 		3F3030A81B4C8C0F00B462ED /* ApplesToApples */ = {
 			isa = PBXGroup;
 			children = (
+				3FDA321E1B50293B00E970A2 /* apple3.jpeg */,
+				3FDA321C1B5028B700E970A2 /* apple2.jpeg */,
+				3FDA321A1B50282700E970A2 /* apple.jpeg */,
 				3F30314D1B4ED09400B462ED /* redCard.png */,
 				3F30314B1B4ED08D00B462ED /* greenCard.png */,
 				3F3030AD1B4C8C0F00B462ED /* AppDelegate.h */,
@@ -221,9 +230,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3030B51B4C8C0F00B462ED /* Main.storyboard in Resources */,
+				3FDA321D1B5028B700E970A2 /* apple2.jpeg in Resources */,
 				3F3030BA1B4C8C0F00B462ED /* LaunchScreen.xib in Resources */,
 				3F30314E1B4ED09400B462ED /* redCard.png in Resources */,
+				3FDA321F1B50293B00E970A2 /* apple3.jpeg in Resources */,
 				3F3030B71B4C8C0F00B462ED /* Images.xcassets in Resources */,
+				3FDA321B1B50282700E970A2 /* apple.jpeg in Resources */,
 				3F30314C1B4ED08D00B462ED /* greenCard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

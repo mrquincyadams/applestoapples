@@ -16,36 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apples to Apples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-7W-evR">
-                                <rect key="frame" x="16" y="105" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuX-eg-Aea">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your set of cards:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5R-Hv-LLI">
-                                <rect key="frame" x="16" y="281" width="343" height="21"/>
+                                <rect key="frame" x="16" y="393" width="343" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="7.621079918e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDk-oJ-sod">
-                                <rect key="frame" x="221" y="326" width="70" height="30"/>
-                                <state key="normal" title="Red cards">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X8m-wi-8Zv"/>
-                                    <segue destination="ar4-tf-0Rq" kind="show" id="MxL-Z4-wls"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihv-gB-V9Y">
-                                <rect key="frame" x="82" y="326" width="84" height="30"/>
+                                <rect key="frame" x="36" y="437" width="84" height="30"/>
                                 <state key="normal" title="Green cards">
+                                    <color key="titleColor" red="0.0" green="1" blue="7.621079918e-05" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -53,8 +39,28 @@
                                     <segue destination="RgO-4L-8Bu" kind="push" identifier="greenSegue" id="bvd-i9-fpE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-hD-d2Q">
+                                <rect key="frame" x="0.0" y="64" width="375" height="289"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDk-oJ-sod">
+                                <rect key="frame" x="269" y="437" width="70" height="30"/>
+                                <state key="normal" title="Red cards">
+                                    <color key="titleColor" red="0.0" green="1" blue="7.621079918e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X8m-wi-8Zv"/>
+                                    <segue destination="ar4-tf-0Rq" kind="show" id="MxL-Z4-wls"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-Fk-htt">
+                                <rect key="frame" x="218" y="486" width="141" height="161"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-E3-8aA">
+                                <rect key="frame" x="16" y="486" width="145" height="161"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="7.621079918e-05" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="zce-3h-QGf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -196,6 +202,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple.jpeg" width="130" height="128"/>
+        <image name="apple2.jpeg" width="120" height="124"/>
+        <image name="apple3.jpeg" width="120" height="128"/>
         <image name="greenCard.png" width="640" height="1138"/>
     </resources>
 </document>
