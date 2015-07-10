@@ -765,6 +765,13 @@
                           @"Zucchini":@"A squashed vegetable.",
                           };
     
+    NSArray *keys = [allRedCardsTitles allKeys];
+    id randomKey = keys[arc4random_uniform([keys count])];
+    id randomValue = allRedCardsTitles[randomKey];
+    
+    _cardTitles = @[randomKey, randomKey, randomKey, randomKey, randomKey];
+    _cardNames = @[randomValue, randomValue, randomValue, randomValue, randomValue];
+    
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     
@@ -783,15 +790,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)randomizeCards
-{
-    NSArray *keys = [allRedCardsTitles allKeys];
-    id randomKey = keys[arc4random_uniform([keys count])];
-    id randomValue = allRedCardsTitles[randomKey];
-    
-    NSLog(randomKey, randomValue);
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
