@@ -765,10 +765,13 @@
                           @"Zucchini":@"A squashed vegetable.",
                           };
     
-    NSArray *keys = [allRedCardsTitles allKeys];
-    id randomKey = keys[arc4random_uniform([keys count])];
-    id randomValue = allRedCardsTitles[randomKey];
+    self.label1.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:0], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:0]]];
+    self.label2.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:1], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:1]]];
+    self.label3.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:2], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:2]]];
+    self.label4.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:3], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:3]]];
+    self.label5.text = [NSString stringWithFormat:@"%@, %@", [self.cardTitles objectAtIndex:4], [allRedCardsTitles objectForKey:[self.cardTitles objectAtIndex:4]]];
     
+    /*
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     
@@ -781,6 +784,7 @@
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
+     */
     // Do any additional setup after loading the view.
 }
 

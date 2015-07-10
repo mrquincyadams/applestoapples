@@ -13,5 +13,10 @@
 @property (strong, nonatomic) NSArray *cardTitles;
 @property (strong, nonatomic) NSArray *cardNames;
 @property (strong, nonatomic) NSArray *cardImages;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UILabel *label3;
+@property (weak, nonatomic) IBOutlet UILabel *label4;
+@property (weak, nonatomic) IBOutlet UILabel *label5;
 
 @end

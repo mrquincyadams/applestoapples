@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "redRootController.h"
 
 @interface ViewController ()
 {
@@ -794,23 +795,20 @@
     if([[segue identifier] isEqualToString:@"red"])
     {
         NSArray *keys = [allRedCardsTitles allKeys];
-        NSMutableArray *redCards = [[NSMutableArray alloc] init];
+        NSMutableArray *redCardsText = [[NSMutableArray alloc] init];
         
         for(int i = 0; i < 5; i++)
         {
-            NSString *randomKey = keys[arc4random_uniform([keys count])];
-            NSString *randomValue = allRedCardsTitles[randomKey];
+            NSString *randomKey = keys[arc4random() % [keys count]];
             
-            NSDictionary *redCard = @{randomKey:randomValue};
-            
-            [redCards addObject: redCard];
+            [redCardsText addObject: randomKey];
         }
         
         
         
         
-//        RedPageViewController *dest = segue.destinationViewController;
-//        dest
+        redRootController *dest = segue.destinationViewController;
+        dest.cardTitles = redCardsText;
     }
 }
 
